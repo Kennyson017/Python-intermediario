@@ -1,0 +1,53 @@
+# Projeto Rich - Exemplo de Texto
+
+Este é um arquivo de exemplo para testar o utilitário de formatação com a biblioteca Rich.
+
+## Características do Rich
+
+A biblioteca Rich oferece diversas funcionalidades para tornar a saída do terminal mais atraente e informativa:
+
+- **Formatação de texto**: negrito, itálico, sublinhado
+- **Cores**: suporte a milhões de cores
+- **Painéis**: criar caixas decorativas ao redor do conteúdo
+- **Tabelas**: exibir dados em formato tabular
+- **Barras de progresso**: indicadores visuais de progresso
+- **Árvores**: estruturas hierárquicas
+- **Syntax highlighting**: destacar código fonte
+
+## Exemplos de Uso
+
+### Texto Simples
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Texto com Markdown
+Este texto contém **palavras em negrito** e *palavras em itálico*. 
+
+Você também pode usar `código inline` e até mesmo criar listas:
+
+1. Primeiro item
+2. Segundo item
+3. Terceiro item
+
+### Dados para Teste
+Nome: João Silva
+Idade: 30 anos
+Profissão: Desenvolvedor Python
+Cidade: São Paulo, SP
+
+### Mensagens de Status
+✅ Operação realizada com sucesso!
+⚠️  Atenção: Verifique os dados inseridos
+❌ Erro: Arquivo não encontrado
+🔄 Processando informações...
+
+### Código de Exemplo
+```python
+from rich.console import Console
+from rich.panel import Panel
+
+console = Console()
+console.print(Panel("Hello, World!", title="Saudação"))
+```
+
+---
+Este arquivo pode ser usado para testar diferentes funcionalidades de formatação e estilização.
